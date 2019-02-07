@@ -4,6 +4,8 @@
   "description": "test webpack",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "execute": "mkdir -p dist && npm run build && node dist/main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
