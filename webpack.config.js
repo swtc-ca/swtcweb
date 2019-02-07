@@ -1,7 +1,7 @@
-const path=require('path')
-
+//const path=require('path')
 module.exports = {
 	mode: 'development',
+	//target: 'web',
 	//entry: './src',
 	//output: {
 	//	path: path.resolve(__dirname, 'dist'),
@@ -20,11 +20,10 @@ module.exports = {
 	//stats: "errors-only",
 	//devServer: {},
 	//plugins: [],
-	node: {
-		Buffer: true,
-		crypto: true,
-	},
-	//target: 'web',
+	//node: {
+	//	Buffer: true,
+	//	crypto: true,
+	//},
 	//externals: [{
 	//	'jingtum': 'jingtum',
 	//	'base': 'base',
