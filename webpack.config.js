@@ -12,11 +12,21 @@ module.exports = {
 	//},
 	//context: __dirname,
 	//module: {},
-	//resolve: {},
+	//resolve: {
+	//	aliasFields: ["browser"],
+	//	mainFields: ['browser', 'module', 'main']
+	//},
 	//performance: {},
-	//target: 'web',
-	//externals: [],
 	//stats: "errors-only",
 	//devServer: {},
-	//plugins: []
+	//plugins: [],
+	node: {
+		Buffer: true,
+		crypto: true,
+	},
+	//target: 'web',
+	//externals: [{
+	//	'jingtum': 'jingtum',
+	//	'base': 'base',
+	//}],
 }

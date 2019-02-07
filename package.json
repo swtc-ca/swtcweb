@@ -19,5 +19,11 @@
     "esm": "^3.2.3",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "bops": "^1.0.0",
+    "jingtum-base-lib": "^1.0.9",
+    "jingtum-lib": "^1.4.2",
+    "websocket": "^1.0.28"
   }
 }
