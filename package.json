@@ -1,0 +1,21 @@
+{
+  "name": "testwp",
+  "version": "1.0.0",
+  "description": "test webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "test",
+    "node"
+  ],
+  "author": "Xinchun Liu <lospringliu@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "esm": "^3.2.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}
