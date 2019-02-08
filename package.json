@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "execute": "mkdir -p dist && npm run build && node dist/main",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "execute": "node -r esm src/standalone",
+    "test": "mocha -r esm \"src/test/*.test.js\"",
+    "dev": "webpack-dev-server",
+    "testweb": "mocha-webpack -r esm --webpack-config webpack.config-test.js \"src/**/*.test.js\""
   },
   "keywords": [
     "webpack",
@@ -16,9 +18,14 @@
   "author": "Xinchun Liu <lospringliu@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
     "esm": "^3.2.3",
+    "mocha": "^5.2.0",
+    "mocha-webpack": "^1.1.0",
     "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
     "bops": "^1.0.0",
